@@ -9,6 +9,7 @@
 | `desc`   | Describes the files in a directory (name, size, type, etc.) in table format |
 | `search` | Search files by keyword, name, or extension                                 |
 | `count`  | Count and list the number of files that match a specific keyword or pattern |
+| `fsum`   | Prints the summary of a particular file in the specified directory          |
 
 Powered by:
 
@@ -111,6 +112,20 @@ fanal count . .txt
 
 This command will count the number of files in the current directory that have the `.txt` extension.
 It will return the count of matching files.
+
+## 4. `fsum` - File Summary
+
+It prints the full summary of the file by giving us the details about words count, letters count, file size, number of lines, extension and last modified.
+
+```bash
+fanal fsum <directory_path> <filename>
+```
+
+#### Example
+
+```bash
+fanal fsum . README.md
+```
 
 ## 📄 License
 
