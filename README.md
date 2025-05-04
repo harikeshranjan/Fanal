@@ -10,6 +10,7 @@
 | `search` | Search files by keyword, name, or extension                                 |
 | `count`  | Count and list the number of files that match a specific keyword or pattern |
 | `fsum`   | Prints the summary of a particular file in the specified directory          |
+| `top`    | Prints the top `N` files in the directory                                   |
 
 Powered by:
 
@@ -125,6 +126,20 @@ fanal fsum <directory_path> <filename>
 
 ```bash
 fanal fsum . README.md
+```
+
+## 5. `top` - Top `N` files
+
+It prints the top `N` files in the current or the directory specified. If the directory is empty, you get the the `The directory is empty` message
+
+```bash
+fanal top --n=<N>
+```
+
+#### Example
+
+```bash
+fanal top --n=10
 ```
 
 ## 📄 License
