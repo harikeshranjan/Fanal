@@ -52,12 +52,16 @@ Describes the contents of the given directory. Lists file name, size, extension,
 
 ```bash
 fanal desc <directory_path>
+
+fanal desc <directory_path> --export=<json/csv>
 ```
 
 #### Example
 
 ```bash
 fanal desc .
+
+fanal desc . --export=json
 ```
 
 This command will output a table with the following columns:
